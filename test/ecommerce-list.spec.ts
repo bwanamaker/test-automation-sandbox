@@ -1,4 +1,4 @@
-const { expect, test } = require('@playwright/test');
+import { expect, test } from '@playwright/test';
 
 const products = ['alder-roadster', 'bramble-touring', 'cinder-track', 'field-notes-hybrid', 'grove-cargo', 'hearth-cruiser', 'juniper-gravel', 'meadow-folding', 'thistle-kids'];
 

@@ -1,4 +1,4 @@
-const { expect, test } = require('@playwright/test');
+import { expect, test } from '@playwright/test';
 
 test('product options and basket confirmation work', async ({ page }) => {
   await page.goto('/products/alder-roadster');

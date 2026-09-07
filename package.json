@@ -13,10 +13,14 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "node --test"
+    "test:unit": "node --test test/server.test.js",
+    "test:playwright": "playwright test"
   },
   "keywords": ["test automation", "Playwright", "Cypress"],
   "author": "Brandon Wanamaker",
   "license": "MIT",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
 }

@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "public",
+    "rootDir": "client",
+    "target": "ES2022",
+    "types": []
+  },
+  "include": ["client/signup.ts"]
+}

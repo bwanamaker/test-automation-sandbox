@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "Practice website framework for test automation.",
   "homepage": "https://github.com/bwanamaker/test-automation-sandbox#readme",
-  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bwanamaker/test-automation-sandbox.git"
@@ -12,15 +11,22 @@
     "url": "https://github.com/bwanamaker/test-automation-sandbox/issues"
   },
   "scripts": {
-    "start": "node server.js",
-    "test:unit": "node --test test/server.test.js",
-    "test:playwright": "playwright test"
+    "build": "tsc --project tsconfig.client.json",
+    "start": "npm run build && tsx server.ts",
+    "test:unit": "tsx --test test/server.test.ts",
+    "test:playwright": "npm run build && playwright test",
+    "test:typecheck": "tsc --noEmit"
   },
   "keywords": ["test automation", "Playwright", "Cypress"],
   "author": "Brandon Wanamaker",
   "license": "MIT",
   "type": "commonjs",
   "devDependencies": {
-    "@playwright/test": "^1.63.0"
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^24.0.0"
+  },
+  "dependencies": {
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
   }
 }

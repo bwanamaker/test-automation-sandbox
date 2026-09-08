@@ -1,7 +1,7 @@
 const { expect, test } = require('@playwright/test');
 
 test('product options and basket confirmation work', async ({ page }) => {
-  await page.goto('/products/alder-roadster');
+  await page.goto('/products/acadia-roadster');
 
   await page.getByLabel('Product variant').selectOption('Step-through frame');
   await page.getByLabel('Quantity').fill('3');
@@ -19,7 +19,7 @@ test('product options and basket confirmation work', async ({ page }) => {
 });
 
 test('product footer reports invalid and valid email submissions', async ({ page }) => {
-  await page.goto('/products/alder-roadster');
+  await page.goto('/products/acadia-roadster');
 
   await page.getByLabel('Email address').fill('not-an-email');
   await page.getByRole('button', { name: 'Sign up' }).click();

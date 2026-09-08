@@ -1,15 +1,15 @@
 const { expect, test } = require('@playwright/test');
 
 const products = [
-  { slug: 'alder-roadster', name: 'Acadia Roadster' },
-  { slug: 'bramble-touring', name: 'Yosemite Touring' },
-  { slug: 'cinder-track', name: 'Zion Track' },
-  { slug: 'field-notes-hybrid', name: 'Shenandoah Hybrid' },
-  { slug: 'grove-cargo', name: 'Redwood Cargo' },
-  { slug: 'hearth-cruiser', name: 'Olympic Cruiser' },
-  { slug: 'juniper-gravel', name: 'Joshua Tree Gravel' },
-  { slug: 'meadow-folding', name: 'Glacier Folding' },
-  { slug: 'thistle-kids', name: 'Yellowstone Kids' },
+  { slug: 'acadia-roadster', name: 'Acadia Roadster' },
+  { slug: 'yosemite-touring', name: 'Yosemite Touring' },
+  { slug: 'zion-track', name: 'Zion Track' },
+  { slug: 'shenandoah-hybrid', name: 'Shenandoah Hybrid' },
+  { slug: 'redwood-cargo', name: 'Redwood Cargo' },
+  { slug: 'olympic-cruiser', name: 'Olympic Cruiser' },
+  { slug: 'joshua-tree-gravel', name: 'Joshua Tree Gravel' },
+  { slug: 'glacier-folding', name: 'Glacier Folding' },
+  { slug: 'yellowstone-kids', name: 'Yellowstone Kids' },
 ];
 
 test('catalog presents nine park-named bicycles with matching detail pages', async ({ page }) => {
@@ -22,6 +22,7 @@ test('catalog presents nine park-named bicycles with matching detail pages', asy
     await expect(link).toHaveCount(1);
     await expect(link.getByRole('heading', { name, exact: true })).toBeVisible();
     await link.click();
+    await expect(page).toHaveURL(`/products/${slug}`);
     await expect(page.getByRole('heading', { level: 1, name, exact: true })).toBeVisible();
     await expect(page).toHaveTitle(`${name} | Wheelhouse`);
     await expect(page.getByRole('form', { name: `${name} options` })).toBeVisible();

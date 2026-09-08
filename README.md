@@ -23,8 +23,8 @@ Routes:
 - `/products` nine-product, national-park-inspired Wheelhouse bicycle catalog
 - `/products/:slug` product details, quantity, and variant controls
 
-The store keeps its original product slugs (for example, Acadia Roadster lives at
-`/products/alder-roadster`) so existing automation links continue to work. Both
+Product slugs match the park-themed names (for example, Acadia Roadster lives at
+`/products/acadia-roadster` and Joshua Tree Gravel at `/products/joshua-tree-gravel`). Both
 themes share the original Futura-first font stack; Futura must be installed on
 the visitor's device, otherwise the existing fallback fonts are used.
 

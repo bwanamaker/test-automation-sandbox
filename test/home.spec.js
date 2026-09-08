@@ -22,7 +22,7 @@ test('homepage links to the store and keeps its distinct theme and shared font',
 
 test('mobile visitors can reach and configure a bicycle without horizontal overflow', async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 812 });
-  for (const route of ['/', '/products', '/products/juniper-gravel']) {
+  for (const route of ['/', '/products', '/products/joshua-tree-gravel']) {
     await page.goto(route);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   }

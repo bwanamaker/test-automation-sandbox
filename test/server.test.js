@@ -3,7 +3,7 @@ const http = require('node:http');
 const test = require('node:test');
 const { createServer } = require('../server');
 
-const products = ['alder-roadster', 'bramble-touring', 'cinder-track', 'field-notes-hybrid', 'grove-cargo', 'hearth-cruiser', 'juniper-gravel', 'meadow-folding', 'thistle-kids'];
+const products = ['acadia-roadster', 'yosemite-touring', 'zion-track', 'shenandoah-hybrid', 'redwood-cargo', 'olympic-cruiser', 'joshua-tree-gravel', 'glacier-folding', 'yellowstone-kids'];
 
 test('serves the landing page, catalog, and every product page', async () => {
   const server = createServer();

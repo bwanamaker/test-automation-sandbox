@@ -9,7 +9,7 @@ if (form) {
     event.preventDefault();
     const valid = email.checkValidity();
     title.textContent = valid ? 'Subscription confirmed' : 'Subscription not confirmed';
-    message.textContent = valid ? 'Thank you. Your workshop notes are on their way.' : 'Enter an email address in the format you@example.com.';
+    message.textContent = valid ? 'Thank you for exploring with us. This sample signup does not send emails.' : 'Enter an email address in the format you@example.com.';
     modal.showModal();
     if (valid) form.reset();
   });

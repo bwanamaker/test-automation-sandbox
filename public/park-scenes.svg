@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <g id="pine"><path d="M0 0-22 45h12l-23 39h23l-28 43h76L10 84h23L10 45h12Z" fill="#526143"/><path d="M0 109v34" stroke="#303a29" stroke-width="7"/></g>
+    <g id="sun"><circle cx="388" cy="75" r="36" fill="#a75838" opacity=".72"/></g>
+  </defs>
+  <symbol id="coast" viewBox="0 0 500 320">
+    <use href="#sun"/><path d="M0 163q105-34 219 0t281-5v162H0Z" fill="#a9af91"/>
+    <path d="m0 210 57-59 36 20 46-22 90 67 109 17 85-49 77 22v114H0Z" fill="#858970"/>
+    <path d="M0 248q120-30 241 5t259-8v75H0Z" fill="#c7b993"/>
+    <path d="M267 180h83m-108 13h119m68-22h44" stroke="#f5eedc" stroke-width="3"/>
+    <use href="#pine" transform="translate(43 75) scale(.65)"/>
+  </symbol>
+  <symbol id="granite" viewBox="0 0 500 320">
+    <use href="#sun"/><path d="M0 250 25 96 96 65 131 97 150 243 217 255 246 130q20-65 73-66l42 159 83-113 56 44v166H0Z" fill="#a5a28a"/>
+    <path d="m96 65 17 169m170-145 33 163m126-137-35 120" stroke="#f5eedc" stroke-width="4" opacity=".5"/>
+    <path d="M0 263q107-40 231-4t269-11v72H0Z" fill="#b8b38e"/>
+    <use href="#pine" transform="translate(459 111) scale(.9)"/><use href="#pine" transform="translate(27 164) scale(.7)"/>
+  </symbol>
+  <symbol id="canyon" viewBox="0 0 500 320">
+    <use href="#sun"/><path d="M0 84h61l15 32h48l22 90 83 43 68-25 41-74h39l22-36h59l42 41v165H0Z" fill="#bb8059"/>
+    <path d="M0 145h72l30 67 117 67m281-84h-80l-60 68" fill="none" stroke="#d8a77b" stroke-width="15"/>
+    <path d="M0 285q140-20 259-3t241-8v46H0Z" fill="#d8c39c"/>
+  </symbol>
+  <symbol id="ridges" viewBox="0 0 500 320">
+    <use href="#sun"/><path d="M0 173q64-115 143-49t145 11 212 12v173H0Z" fill="#abb094"/>
+    <path d="M0 222q96-114 182-40t160-22 158 22v138H0Z" fill="#858e70"/>
+    <path d="M0 269q70-39 159 0t167-7 174-10v68H0Z" fill="#b8b38e"/>
+    <use href="#pine" transform="translate(458 135) scale(.7)"/>
+  </symbol>
+  <symbol id="forest" viewBox="0 0 500 320">
+    <path d="M0 165q100-35 210 10t290-33v178H0Z" fill="#b8b38e"/>
+    <g fill="#858970"><path d="M36 0h24l13 274H20ZM130 0h19l9 274h-37ZM376 0h23l19 277h-54ZM451 0h27l19 285h-64Z"/></g>
+    <g stroke="#858970" stroke-width="12"><path d="m48 70-38-30m132 68 40-41m207 14-40-29m116 76 35-39"/></g>
+    <path d="M0 288q119-66 266-8t234-9v49H0Z" fill="#c7b993"/>
+    <use href="#pine" transform="translate(81 141) scale(.8)"/><use href="#pine" transform="translate(429 181) scale(.6)"/>
+  </symbol>
+  <symbol id="coast-forest" viewBox="0 0 500 320">
+    <circle cx="334" cy="77" r="35" fill="#f5eedc"/>
+    <path d="M0 162q95-41 225 0t275-13v171H0Z" fill="#a9af91"/>
+    <path d="m296 193 25-82 20-14 36 101 64 20 28-60 31 29v133H0Z" fill="#858970"/>
+    <path d="M0 242q100-28 219 21t281 16v41H0Z" fill="#c7b993"/>
+    <use href="#pine" transform="translate(47 16) scale(1.5)"/><use href="#pine" transform="translate(101 89) scale(1)"/>
+    <path d="M226 201h70m-97 17h101" stroke="#f5eedc" stroke-width="3"/>
+  </symbol>
+  <symbol id="desert" viewBox="0 0 500 320">
+    <use href="#sun"/><path d="M0 254q18-104 61-75 12-81 56-48 24-14 43 37l34 93 98 1q7-90 49-57 26-87 64-46 39-30 58 53l37 38v70H0Z" fill="#bb9672"/>
+    <path d="M0 285q175-42 289-4t211-8v47H0Z" fill="#d8c39c"/>
+    <path d="m61 244 5-104-26-22-3-32m29 83 33-31 8-41" fill="none" stroke="#526143" stroke-width="11"/>
+    <g fill="#526143"><path d="m37 65-23 36 25-9 22 10Zm71 12-27 31 26-7 24 14ZM67 113l-25 32 26-8 21 12Z"/></g>
+  </symbol>
+  <symbol id="alpine" viewBox="0 0 500 320">
+    <circle cx="381" cy="69" r="31" fill="#f5eedc"/>
+    <path d="m0 205 87-132 75 113 88-156 112 157 53-82 85 104v111H0Z" fill="#858e70"/>
+    <path d="m54 123 33-50 34 51-29-10-9 14-11-13Zm162-33 34-60 43 61-33-15-13 19-12-17Z" fill="#f5eedc"/>
+    <path d="M0 234q136-21 248 4t252-8v90H0Z" fill="#a9af91"/>
+    <path d="M0 285q120-28 222 0t278-2v37H0Z" fill="#c7b993"/>
+    <use href="#pine" transform="translate(472 137) scale(.85)"/>
+  </symbol>
+  <symbol id="geyser" viewBox="0 0 500 320">
+    <path d="M0 175q54-55 134-6t183-12 183 14v149H0Z" fill="#a9af91"/>
+    <path d="M0 241q153-35 262 0t238 5v74H0Z" fill="#c7b993"/>
+    <ellipse cx="374" cy="249" rx="93" ry="20" fill="#bb8059"/><ellipse cx="374" cy="246" rx="65" ry="12" fill="#e4d4b4"/>
+    <path d="M368 235q-37-47-8-73-38-38-13-68-20-36 17-64m18 204q36-58 11-83 31-36 9-66" fill="none" stroke="#f5eedc" stroke-width="19" stroke-linecap="round" opacity=".8"/>
+    <use href="#pine" transform="translate(43 86) scale(1)"/><use href="#pine" transform="translate(100 132) scale(.7)"/>
+  </symbol>
+</svg>

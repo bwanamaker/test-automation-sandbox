@@ -1,1 +1,32 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="data:,"><link rel="stylesheet" href="/styles.css"><script src="/signup.js" defer></script><title>Cinder Track</title></head><body><header class="site-header"><a class="brand" href="/">Wheelhouse</a><nav aria-label="Main navigation"><a href="/">Home</a><a href="/products">Bicycles</a></nav></header><main><a href="/products">&larr; All bicycles</a><section class="detail"><div class="detail-art"><img src="/bicycle.svg" alt="Illustration of the Cinder Track"></div><div class="detail-copy"><p class="eyebrow">Brick edition</p><h1>Cinder Track</h1><p class="price">$720</p><p>A pared-back fixed gear with a lively ride and a clean, classic silhouette.</p><form class="product-form" aria-label="Cinder Track options"><label for="variant">Product variant<select id="variant" name="variant"><option>Standard frame</option><option>Step-through frame</option><option>Frame set only</option></select></label><label for="quantity">Quantity<input id="quantity" name="quantity" type="number" value="1" min="1" max="10"></label><button class="button" type="button">Add to basket</button></form></div></section></main><footer><div class="footer-inner"><div><p class="eyebrow">Post from the workshop</p><h2>Notes on the next ride.</h2></div><form class="signup" id="email-signup" novalidate><label for="email" style="position:absolute;left:-9999px">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><button class="button" type="submit">Sign up</button></form></div></footer><dialog id="signup-modal" aria-labelledby="modal-title"><h2 id="modal-title"></h2><p id="modal-message"></p><div class="modal-actions"><button class="button" id="close-modal" type="button">Close</button></div></dialog></body></html>
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="data:,"><link rel="stylesheet" href="/styles.css"><script src="/signup.js" defer></script><title>Zion Track | Wheelhouse</title></head>
+<body class="store">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><a class="brand" href="/products"><span class="brand-mark" aria-hidden="true">△</span> Wheelhouse<span class="brand-subtitle">Bicycle supply &amp; everyday adventure</span></a><nav aria-label="Main navigation"><a href="/">Sandbox home</a><a href="/products">Bicycles</a></nav></header>
+  <main id="main">
+    <a class="back-link" href="/products">&larr; All bicycles</a>
+    <section class="detail">
+      <div class="detail-art park-canyon">
+        <div class="park-caption"><span>Utah</span><span>No. 03</span></div>
+        <p class="park-name">Zion</p>
+        <svg class="park-scene" viewBox="0 0 500 320" aria-hidden="true"><use href="/park-scenes.svg#canyon"></use></svg>
+        <img src="/bicycle.svg" alt="Illustration of the Zion Track">
+        <p class="park-art-label">The national parks collection</p>
+      </div>
+      <div class="detail-copy">
+        <p class="eyebrow">Zion National Park / Brick edition</p>
+        <h1>Zion Track</h1><p class="price">$720</p><p>A pared-back fixed gear with sandstone spirit, clean lines, and a lively ride through town.</p>
+        <p class="park-inspiration">Inspired by sandstone &amp; desert light.</p>
+        <form class="product-form" aria-label="Zion Track options">
+          <label for="variant">Product variant<select id="variant" name="variant"><option>Standard frame</option><option>Step-through frame</option><option>Frame set only</option></select></label>
+          <label for="quantity">Quantity<input id="quantity" name="quantity" type="number" value="1" min="1" max="10"></label>
+          <button class="button" type="button">Add to basket</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer><div class="footer-inner"><div><p class="eyebrow">Field notes from Wheelhouse</p><h2>A little inspiration for the long way home.</h2><p class="footer-description">Ride ideas, fresh perspectives, and notes on the next adventure.</p></div><form class="signup" id="email-signup" novalidate><label class="visually-hidden" for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><button class="button" type="submit">Sign up</button></form><p class="store-disclaimer">A sample store for testing. No purchases or emails are sent.</p></div></footer>
+  <dialog id="signup-modal" aria-labelledby="modal-title"><h2 id="modal-title"></h2><p id="modal-message"></p><div class="modal-actions"><button class="button" id="close-modal" type="button">Close</button></div></dialog>
+</body>
+</html>

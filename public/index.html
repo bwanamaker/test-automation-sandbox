@@ -7,9 +7,46 @@
   <link rel="stylesheet" href="/styles.css">
   <title>Test Automation Sandbox</title>
 </head>
-<body>
-  <header class="site-header"><a class="brand" href="/">Test Automation Sandbox</a><nav aria-label="Main navigation"><a href="/">Home</a><a href="/products">Bicycles</a></nav></header>
-  <main><section class="landing"><div class="landing-copy"><p class="eyebrow">A practice place</p><h1>Build sharper automation skills.</h1><p>Hands-on web scenarios for engineers and QA specialists who want to write, refine, and trust their automated tests.</p><a class="button" href="/products">Launch sandbox</a></div><div class="stamp" aria-hidden="true"><span>Test<br>Automation<br>Sandbox</span></div></section></main>
-  <footer><div class="footer-inner"><div><p class="eyebrow">Build confidence</p><h2>Practice browser automation in a calm, focused space.</h2></div></div></footer>
+<body class="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="/">Test Automation<br>Sandbox<span class="brand-star" aria-hidden="true">✳</span></a>
+    <nav aria-label="Main navigation"><a href="/" aria-current="page">Home</a><a href="/products">E-commerce lab <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="landing">
+      <div class="landing-copy">
+        <p class="eyebrow">A little curiosity. A lot of possibility.</p>
+        <h1>Your next<br>great <em>test</em><br>starts here.</h1>
+        <p>A hands-on playground for browser automation. Explore a real-feeling store, try a new approach, and make your next test a little smarter.</p>
+        <a class="button" href="/products">Launch sandbox <span aria-hidden="true">↗</span></a>
+        <p class="landing-caption">One sample store. Plenty to discover.</p>
+      </div>
+      <div class="atomic-poster" aria-hidden="true">
+        <div class="poster-label"><span>THE EXPERIMENT SERIES</span><span>№ 001</span></div>
+        <svg viewBox="0 0 480 480" fill="none">
+          <circle cx="240" cy="240" r="179" fill="#e7ad68"/>
+          <g stroke="#174e52" stroke-width="2">
+            <ellipse cx="240" cy="240" rx="211" ry="69" transform="rotate(-35 240 240)"/>
+            <ellipse cx="240" cy="240" rx="211" ry="69" transform="rotate(35 240 240)"/>
+            <ellipse cx="240" cy="240" rx="211" ry="69" transform="rotate(90 240 240)"/>
+          </g>
+          <circle cx="240" cy="240" r="65" fill="#174e52"/>
+          <path d="m219 220-21 20 21 20m42-40 21 20-21 20m-15-53-12 66" stroke="#fff4df" stroke-width="5"/>
+          <circle cx="88" cy="122" r="17" fill="#bd4b30"/>
+          <circle cx="383" cy="126" r="12" fill="#174e52"/>
+          <circle cx="240" cy="451" r="15" fill="#bd4b30"/>
+          <path d="M401 316v48m-24-24h48m-40-16 32 32m0-32-32 32M56 287v30m-15-15h30" stroke="#bd4b30" stroke-width="3"/>
+        </svg>
+        <div class="poster-footer"><span>SMALL TESTS.<br>BIG DISCOVERIES.</span><span class="poster-orbit">Explore<br>↗</span></div>
+      </div>
+    </section>
+    <section class="lab-preview" aria-labelledby="lab-title">
+      <p class="eyebrow">01 / The e-commerce lab</p>
+      <div><h2 id="lab-title">Take your skills for a spin.</h2><p>Browse nine park-inspired bicycles, choose a frame, add to a basket, and put form validation through its paces.</p></div>
+      <a class="text-link" href="/products">Explore the store <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <footer><div class="footer-inner"><p>Made for curious minds &amp; repeatable results.</p><p class="footer-note">TEST. LEARN. REPEAT. <span aria-hidden="true">✳</span></p></div></footer>
 </body>
 </html>

@@ -1,1 +1,32 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="data:,"><link rel="stylesheet" href="/styles.css"><script src="/signup.js" defer></script><title>Alder Roadster</title></head><body><header class="site-header"><a class="brand" href="/">Wheelhouse</a><nav aria-label="Main navigation"><a href="/">Home</a><a href="/products">Bicycles</a></nav></header><main><a href="/products">&larr; All bicycles</a><section class="detail"><div class="detail-art"><img src="/bicycle.svg" alt="Illustration of the Alder Roadster"></div><div class="detail-copy"><p class="eyebrow">Ochre edition</p><h1>Alder Roadster</h1><p class="price">$649</p><p>A quick, upright city bicycle for daily errands and easy Sunday turns.</p><form class="product-form" aria-label="Alder Roadster options"><label for="variant">Product variant<select id="variant" name="variant"><option>Standard frame</option><option>Step-through frame</option><option>Frame set only</option></select></label><label for="quantity">Quantity<input id="quantity" name="quantity" type="number" value="1" min="1" max="10"></label><button class="button" type="button">Add to basket</button></form></div></section></main><footer><div class="footer-inner"><div><p class="eyebrow">Post from the workshop</p><h2>Notes on the next ride.</h2></div><form class="signup" id="email-signup" novalidate><label for="email" style="position:absolute;left:-9999px">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><button class="button" type="submit">Sign up</button></form></div></footer><dialog id="signup-modal" aria-labelledby="modal-title"><h2 id="modal-title"></h2><p id="modal-message"></p><div class="modal-actions"><button class="button" id="close-modal" type="button">Close</button></div></dialog></body></html>
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="data:,"><link rel="stylesheet" href="/styles.css"><script src="/signup.js" defer></script><title>Acadia Roadster | Wheelhouse</title></head>
+<body class="store">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><a class="brand" href="/products"><span class="brand-mark" aria-hidden="true">△</span> Wheelhouse<span class="brand-subtitle">Bicycle supply &amp; everyday adventure</span></a><nav aria-label="Main navigation"><a href="/">Sandbox home</a><a href="/products">Bicycles</a></nav></header>
+  <main id="main">
+    <a class="back-link" href="/products">&larr; All bicycles</a>
+    <section class="detail">
+      <div class="detail-art park-coast">
+        <div class="park-caption"><span>Maine</span><span>No. 01</span></div>
+        <p class="park-name">Acadia</p>
+        <svg class="park-scene" viewBox="0 0 500 320" aria-hidden="true"><use href="/park-scenes.svg#coast"></use></svg>
+        <img src="/bicycle.svg" alt="Illustration of the Acadia Roadster">
+        <p class="park-art-label">The national parks collection</p>
+      </div>
+      <div class="detail-copy">
+        <p class="eyebrow">Acadia National Park / Ochre edition</p>
+        <h1>Acadia Roadster</h1><p class="price">$649</p><p>A breezy, upright roadster for salt-air mornings, harbor roads, and the scenic way into town.</p>
+        <p class="park-inspiration">Inspired by rocky shores &amp; ocean air.</p>
+        <form class="product-form" aria-label="Acadia Roadster options">
+          <label for="variant">Product variant<select id="variant" name="variant"><option>Standard frame</option><option>Step-through frame</option><option>Frame set only</option></select></label>
+          <label for="quantity">Quantity<input id="quantity" name="quantity" type="number" value="1" min="1" max="10"></label>
+          <button class="button" type="button">Add to basket</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer><div class="footer-inner"><div><p class="eyebrow">Field notes from Wheelhouse</p><h2>A little inspiration for the long way home.</h2><p class="footer-description">Ride ideas, fresh perspectives, and notes on the next adventure.</p></div><form class="signup" id="email-signup" novalidate><label class="visually-hidden" for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><button class="button" type="submit">Sign up</button></form><p class="store-disclaimer">A sample store for testing. No purchases or emails are sent.</p></div></footer>
+  <dialog id="signup-modal" aria-labelledby="modal-title"><h2 id="modal-title"></h2><p id="modal-message"></p><div class="modal-actions"><button class="button" id="close-modal" type="button">Close</button></div></dialog>
+</body>
+</html>

@@ -116,7 +116,6 @@ dialog::backdrop { background: rgba(46, 42, 32, .65); }
 .poster-label { display: flex; justify-content: space-between; gap: 1rem; font-size: .56rem; letter-spacing: .12em; }
 .atomic-poster svg { display: block; width: 100%; margin: 1rem 0; }
 .poster-footer { display: flex; justify-content: space-between; align-items: end; border-top: 1px solid #174e5255; padding-top: 1rem; font-size: 1.25rem; font-weight: 700; letter-spacing: -.02em; line-height: 1.1; }
-.poster-orbit { text-align: right; font-size: .65rem; text-transform: uppercase; letter-spacing: .1em; line-height: 1.6; }
 .lab-preview { display: grid; grid-template-columns: 1fr 1.8fr auto; gap: 2rem; align-items: center; margin-top: 4rem; padding: 2rem 0; border-top: 1px solid #174e5260; }
 .lab-preview .eyebrow { margin: 0; }
 .lab-preview h2 { font-size: 1.4rem; letter-spacing: -.03em; }

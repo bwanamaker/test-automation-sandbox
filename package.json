@@ -1,6 +1,6 @@
 {
   "name": "test-automation-playground",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Practice website framework for test automation.",
   "homepage": "https://github.com/bwanamaker/test-automation-playground#readme",
   "main": "server.js",

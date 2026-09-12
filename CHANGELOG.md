@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1
+
+- Renamed the project and GitHub repository from Test Automation Sandbox to Test Automation Playground.
+
 ## 0.3.0
 
 - Added a static build that generates GitHub Pages-compatible routes and repository-aware asset URLs.

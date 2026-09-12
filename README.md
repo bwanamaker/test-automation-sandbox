@@ -1,10 +1,10 @@
-# Test Automation Sandbox
+# Test Automation Playground
 
 A website containing varied page types for practicing automated testing.
 
 ## Live demo
 
-The static site is published at [bwanamaker.github.io/test-automation-sandbox](https://bwanamaker.github.io/test-automation-sandbox/) after GitHub Pages is enabled for the repository. The deployed site includes the homepage, bicycle catalog and detail pages, and astronaut application at the same clean routes described below.
+The static site is published at [bwanamaker.github.io/test-automation-playground](https://bwanamaker.github.io/test-automation-playground/) after GitHub Pages is enabled for the repository. The deployed site includes the homepage, bicycle catalog and detail pages, and astronaut application at the same clean routes described below.
 
 ## Local development
 
@@ -23,7 +23,7 @@ This starts the local Node.js server. The terminal prints the local URL, by defa
 
 Routes:
 
-- `/` atomic-era welcome page with links to the e-commerce sandbox
+- `/` atomic-era welcome page with links to the e-commerce playground
 - `/products` nine-product, national-park-inspired Wheelhouse bicycle catalog
 - `/products/:slug` product details, quantity, and variant controls
 - `/astronaut-application` retro-futurist astronaut intake form with a randomized 5-15 second loading sequence
@@ -38,7 +38,7 @@ the visitor's device, otherwise the existing fallback fonts are used.
 GitHub Pages serves a static build; it does not run the local Node.js server. Build the Pages artifact locally with:
 
 ```sh
-npm run build -- --base-path /test-automation-sandbox
+npm run build -- --base-path /test-automation-playground
 ```
 
 This writes an uncommitted `dist/` directory with directory-based `index.html` files for each clean route and updates internal URLs for the GitHub Pages repository path.

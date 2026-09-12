@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1
+
+- Renamed the project and GitHub repository from Test Automation Sandbox to Test Automation Playground.
+
 ## 0.3.0
 
 - Added a static build that generates GitHub Pages-compatible routes and repository-aware asset URLs.
@@ -15,6 +19,6 @@
 
 ## 0.1.0
 
-- Added the atomic-era sandbox home page with a visual experiment poster and browser-automation introduction.
+- Added the atomic-era playground home page with a visual experiment poster and browser-automation introduction.
 - Added the Wheelhouse bike shop with a nine-product national-park collection, product details, configuration controls, and basket confirmations.
 - Added email signup validation, responsive layouts, shared styling, and initial unit and Playwright coverage.

@@ -21,7 +21,7 @@ function createServer() {
 
 if (require.main === module) {
   const port = Number(process.env.PORT) || 3000;
-  createServer().listen(port, () => console.log(`Test Automation Sandbox running at http://localhost:${port}`));
+  createServer().listen(port, () => console.log(`Test Automation Playground running at http://localhost:${port}`));
 }
 
 module.exports = { createServer };

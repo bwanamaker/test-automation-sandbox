@@ -6,10 +6,10 @@ const test = require('node:test');
 const { buildStaticSite } = require('../scripts/build-static');
 
 const products = ['acadia-roadster', 'yosemite-touring', 'zion-track', 'shenandoah-hybrid', 'redwood-cargo', 'olympic-cruiser', 'joshua-tree-gravel', 'glacier-folding', 'yellowstone-kids'];
-const basePath = '/test-automation-sandbox';
+const basePath = '/test-automation-playground';
 
 test('builds GitHub Pages routes and prefixes internal URLs with the base path', async () => {
-  const outputDir = await fs.mkdtemp(path.join(os.tmpdir(), 'test-automation-sandbox-static-'));
+  const outputDir = await fs.mkdtemp(path.join(os.tmpdir(), 'test-automation-playground-static-'));
   try {
     await buildStaticSite({ basePath, outputDir });
 

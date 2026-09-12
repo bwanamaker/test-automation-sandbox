@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/astronaut-application.js" defer></script>
+  <title>Astronaut Application | Starward Bureau</title>
+</head>
+<body class="astronaut-page">
+  <a class="skip-link" href="#main">Skip to application</a>
+  <header class="site-header space-header">
+    <a class="space-brand" href="/astronaut-application"><span class="space-brand-mark" aria-hidden="true">✦</span> Starward Bureau<span>Interplanetary personnel office</span></a>
+    <nav aria-label="Main navigation"><a href="/">Home</a><a href="/products">Bike Shop</a><a href="/astronaut-application" aria-current="page">Astronaut intake</a></nav>
+  </header>
+  <main id="main">
+    <section class="space-masthead" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">Recruitment docket 7-A / all systems nominal</p>
+        <h1 id="page-title">Your seat among<br>the <em>stars</em> awaits.</h1>
+        <p>Mission Control is seeking curious, steady-handed earthlings for our next set of very important expeditions.</p>
+      </div>
+      <div class="rocket-seal" aria-hidden="true">
+        <span>STARWARD</span><strong>READY<br>FOR LIFT-OFF</strong><span>EST. TOMORROW</span>
+        <svg viewBox="0 0 160 120" fill="none"><path d="M80 12c25 25 29 55 22 78L80 108 58 90c-7-23-3-53 22-78Z" fill="#e8502f"/><path d="m70 95-16 19m36-19 16 19M80 12v96" stroke="#fff6df" stroke-width="3"/><circle cx="80" cy="47" r="11" fill="#173449" stroke="#fff6df" stroke-width="3"/><path d="m47 85-24 5 25 10m65-15 24 5-25 10" stroke="#173449" stroke-width="3"/></svg>
+      </div>
+    </section>
+
+    <section class="mission-loading" id="mission-loading" role="status" aria-live="polite" aria-label="Preparing astronaut application">
+      <div class="solar-spinner" aria-hidden="true"><i class="sun"></i><i class="orbit orbit-one"><b></b></i><i class="orbit orbit-two"><b></b></i><i class="orbit orbit-three"><b></b></i></div>
+      <p class="eyebrow">Calibrating orbital paperwork</p>
+      <p>Aligning forms with the moon. Please stand by.</p>
+    </section>
+
+    <section class="application-shell" id="application-shell" hidden aria-labelledby="application-title">
+      <div class="application-intro"><p class="eyebrow">Applicant particulars / please print clearly</p><h2 id="application-title">Astronaut application</h2><p>Fields marked <span aria-hidden="true">*</span> are required for launch consideration.</p></div>
+      <form id="astronaut-form" novalidate>
+        <div class="form-summary" id="form-summary" role="alert" tabindex="-1" hidden></div>
+        <fieldset>
+          <legend>Earthling details</legend>
+          <div class="form-grid">
+            <label for="full-name">Full name <span aria-hidden="true">*</span><input id="full-name" name="fullName" type="text" autocomplete="name" required aria-describedby="full-name-error"><span class="field-error" id="full-name-error"></span></label>
+            <label for="email">Transmission address <span aria-hidden="true">*</span><input id="email" name="email" type="email" autocomplete="email" required placeholder="pilot@example.com" aria-describedby="email-error"><span class="field-error" id="email-error"></span></label>
+            <label for="birth-date">Date of birth <span aria-hidden="true">*</span><input id="birth-date" name="birthDate" type="date" required aria-describedby="birth-date-error"><span class="field-error" id="birth-date-error"></span></label>
+            <label for="home-planet">Home planet<select id="home-planet" name="homePlanet"><option value="Earth">Earth</option><option value="Mars">Mars</option><option value="Venus">Venus</option><option value="Other">Somewhere delightfully distant</option></select></label>
+            <label for="call-sign">Personal call sign<input id="call-sign" name="callSign" type="text" autocomplete="off" placeholder="Optional"></label>
+            <label for="space-music">Preferred space travel music<input id="space-music" name="spaceMusic" type="text" autocomplete="off" placeholder="Optional"></label>
+            <label for="space-snack">Favorite non-Earth snack<input id="space-snack" name="spaceSnack" type="text" autocomplete="off" placeholder="Optional"></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Flight credentials</legend>
+          <div class="form-grid">
+            <label for="mission-role">Preferred mission role <span aria-hidden="true">*</span><select id="mission-role" name="missionRole" required aria-describedby="mission-role-error"><option value="">Select a role</option><option>Commander</option><option>Pilot</option><option>Science specialist</option><option>Snack officer</option></select><span class="field-error" id="mission-role-error"></span></label>
+            <label for="flight-hours">Hours piloting anything <span aria-hidden="true">*</span><input id="flight-hours" name="flightHours" type="number" min="0" max="50000" step="1" required aria-describedby="flight-hours-error"><span class="field-error" id="flight-hours-error"></span></label>
+          </div>
+          <div class="choice-group" data-group="suit-size"><span>Spacesuit size <span aria-hidden="true">*</span></span><div><label><input name="suitSize" type="radio" value="Compact" required> Compact</label><label><input name="suitSize" type="radio" value="Standard"> Standard</label><label><input name="suitSize" type="radio" value="Heroic"> Heroic</label></div><span class="field-error" id="suit-size-error"></span></div>
+          <div class="choice-group" data-group="specialties"><span>Mission specialties <span aria-hidden="true">*</span></span><div><label><input name="specialties" type="checkbox" value="Navigation"> Navigation</label><label><input name="specialties" type="checkbox" value="Repair"> Rocket repair</label><label><input name="specialties" type="checkbox" value="Diplomacy"> Alien diplomacy</label></div><span class="field-error" id="specialties-error"></span></div>
+        </fieldset>
+        <fieldset>
+          <legend>Ground contact</legend>
+          <div class="form-grid">
+            <label for="emergency-name">Emergency contact <span aria-hidden="true">*</span><input id="emergency-name" name="emergencyName" type="text" autocomplete="name" required aria-describedby="emergency-name-error"><span class="field-error" id="emergency-name-error"></span></label>
+            <label for="emergency-phone">Emergency telephone <span aria-hidden="true">*</span><input id="emergency-phone" name="emergencyPhone" type="tel" autocomplete="tel" required aria-describedby="emergency-phone-error"><span class="field-error" id="emergency-phone-error"></span></label>
+          </div>
+          <label for="mission-statement">Why should we send you skyward? <span aria-hidden="true">*</span><textarea id="mission-statement" name="missionStatement" rows="5" minlength="30" required aria-describedby="mission-statement-error"></textarea><span class="field-error" id="mission-statement-error"></span></label>
+          <label class="consent"><input id="consent" name="consent" type="checkbox" required aria-describedby="consent-error"> I accept that space may be cold, vast, and occasionally inconvenient. <span aria-hidden="true">*</span><span class="field-error" id="consent-error"></span></label>
+        </fieldset>
+        <div class="form-actions"><button class="button launch-button" type="submit">Transmit application <span aria-hidden="true">↗</span></button><button class="text-button" type="reset">Clear form</button></div>
+      </form>
+      <section class="application-confirmation" id="application-confirmation" aria-labelledby="confirmation-title" aria-live="polite" tabindex="-1" hidden>
+        <p class="eyebrow">Transmission received</p>
+        <h2 id="confirmation-title">Application aboard!</h2>
+        <p id="confirmation-message"></p>
+        <div class="confirmation-actions"><button class="button" type="button" id="return-to-earth">Return to Earth</button></div>
+      </section>
+    </section>
+  </main>
+  <footer><div class="footer-inner"><p>STARWARD BUREAU / A practice mission for intrepid test automation.</p><p class="footer-note">BOLDLY TEST. <span aria-hidden="true">✦</span></p></div></footer>
+</body>
+</html>

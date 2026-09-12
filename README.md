@@ -22,6 +22,7 @@ Routes:
 - `/` atomic-era welcome page with links to the e-commerce sandbox
 - `/products` nine-product, national-park-inspired Wheelhouse bicycle catalog
 - `/products/:slug` product details, quantity, and variant controls
+- `/astronaut-application` retro-futurist astronaut intake form with a randomized 5-15 second loading sequence
 
 Product slugs match the park-themed names (for example, Acadia Roadster lives at
 `/products/acadia-roadster` and Joshua Tree Gravel at `/products/joshua-tree-gravel`). Both
@@ -38,7 +39,8 @@ npm run test:playwright
 
 Playwright starts the local server automatically. Coverage includes homepage
 navigation, theme separation, all nine catalog-to-detail journeys, mobile layout,
-product options, basket confirmations, and email validation.
+product options, basket confirmations, email validation, and astronaut application
+loading, form validation, and confirmation behavior.
 
 ## License
 

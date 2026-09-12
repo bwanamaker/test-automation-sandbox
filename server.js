@@ -8,7 +8,7 @@ const types = { '.css': 'text/css; charset=utf-8', '.html': 'text/html; charset=
 function createServer() {
   return http.createServer((request, response) => {
     const url = new URL(request.url, 'http://localhost');
-    const route = url.pathname === '/' ? '/index.html' : url.pathname === '/products' || url.pathname.startsWith('/products/') ? `${url.pathname}.html` : url.pathname;
+    const route = url.pathname === '/' ? '/index.html' : url.pathname === '/products' || url.pathname.startsWith('/products/') || url.pathname === '/astronaut-application' ? `${url.pathname}.html` : url.pathname;
     const file = path.resolve(publicDir, `.${route}`);
     if (!file.startsWith(`${publicDir}${path.sep}`)) return response.writeHead(404).end('Not found');
     fs.readFile(file, (error, contents) => {

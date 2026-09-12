@@ -1,6 +1,6 @@
 {
   "name": "test-automation-sandbox",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Practice website framework for test automation.",
   "homepage": "https://github.com/bwanamaker/test-automation-sandbox#readme",
   "main": "server.js",

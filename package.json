@@ -13,7 +13,9 @@
   },
   "scripts": {
     "start": "node server.js",
+    "build": "node scripts/build-static.js",
     "test:unit": "node --test test/server.test.js",
+    "test:static": "node --test test/static-site.test.js",
     "test:playwright": "playwright test"
   },
   "keywords": ["test automation", "Playwright", "Cypress"],

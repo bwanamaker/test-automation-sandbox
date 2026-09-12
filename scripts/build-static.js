@@ -71,9 +71,6 @@ function parseArguments(args) {
     if (args[index] === '--base-path') {
       options.basePath = args[index + 1];
       index += 1;
-    } else if (args[index] === '--out') {
-      options.outputDir = args[index + 1];
-      index += 1;
     } else {
       throw new Error(`Unknown argument: ${args[index]}`);
     }

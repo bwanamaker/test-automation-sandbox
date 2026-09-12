@@ -12,7 +12,7 @@ test('serves the landing page, catalog, and every product page', async () => {
   const get = path => new Promise((resolve, reject) => http.get(`http://localhost:${port}${path}`, response => { let body = ''; response.on('data', chunk => body += chunk); response.on('end', () => resolve({ status: response.statusCode, body })); }).on('error', reject));
   try {
     const home = await get('/');
-    assert.match(home.body, /Launch sandbox/);
+    assert.match(home.body, /Bike Shop/);
     assert.doesNotMatch(home.body, /Wheelhouse/);
     assert.doesNotMatch(home.body, /email-signup/);
     const application = await get('/astronaut-application');

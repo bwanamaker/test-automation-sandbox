@@ -14,6 +14,7 @@ button, input, select, textarea { font: inherit; }
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--rust); outline-offset: 5px; }
 .site-header, main, .footer-inner { width: min(1120px, calc(100% - 3rem)); margin: auto; }
 .site-header { display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; padding: 1.5rem 0; border-bottom: 1px solid rgba(46, 42, 32, .35); }
+.site-header > a:first-child { min-height: 3.125rem; }
 .brand { position: relative; font-size: 1.4rem; font-weight: 700; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; }
 .brand-mark { display: inline-block; color: var(--olive); font-size: 2rem; line-height: 1; vertical-align: middle; }
 .brand-subtitle { display: block; font-size: .56rem; letter-spacing: .15em; margin-top: .15rem; }
@@ -182,7 +183,7 @@ dialog::backdrop { background: rgba(46, 42, 32, .65); }
 
 /* Starward Bureau uses an optimistic, streamlined space-age visual language. */
 .astronaut-page { --space-navy: #173449; --space-blue: #216674; --space-cream: #fff6df; --space-gold: #f5bb4c; --space-orange: #e8502f; --space-sky: #8fc5c2; background: #d8e3d4; color: var(--space-navy); }
-.astronaut-page .site-header, .astronaut-page main, .astronaut-page .footer-inner { width: min(1060px, calc(100% - 3rem)); }
+.astronaut-page main, .astronaut-page .footer-inner { width: min(1060px, calc(100% - 3rem)); }
 .space-header { border-color: #17344966; }
 .space-brand { color: var(--space-navy); font-size: 1.15rem; font-weight: 700; letter-spacing: .12em; line-height: 1; text-decoration: none; text-transform: uppercase; }
 .space-brand span:last-child { display: block; font-size: .5rem; letter-spacing: .18em; margin: .35rem 0 0 2.1rem; }
@@ -247,7 +248,7 @@ dialog::backdrop { background: rgba(46, 42, 32, .65); }
 .astronaut-page .footer-inner { grid-template-columns: 1fr auto; }
 .astronaut-preview { border-bottom: 1px solid #174e5260; margin-top: 0; }
 @media (max-width: 720px) {
-  .astronaut-page .site-header, .astronaut-page main, .astronaut-page .footer-inner { width: calc(100% - 2rem); }
+  .astronaut-page main, .astronaut-page .footer-inner { width: calc(100% - 2rem); }
   .space-masthead { gap: 2rem; grid-template-columns: 1fr 9rem; }
   .rocket-seal { min-height: 13rem; padding: .75rem; }
   .rocket-seal strong { font-size: .9rem; }

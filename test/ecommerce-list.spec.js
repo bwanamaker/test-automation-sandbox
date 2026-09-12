@@ -12,7 +12,7 @@ const products = [
   { slug: 'yellowstone-kids', name: 'Yellowstone Kids' },
 ];
 
-test('catalog presents nine park-named bicycles with matching detail pages', async ({ page }) => {
+test('catalog presents nine park-named bicycles with matching detail pages and astronaut links', async ({ page }) => {
   await page.goto('/products');
   await expect(page.getByRole('heading', { name: 'Find your own great outdoors.' })).toBeVisible();
   await expect(page.locator('.product-card')).toHaveCount(9);
@@ -26,6 +26,7 @@ test('catalog presents nine park-named bicycles with matching detail pages', asy
     await expect(page.getByRole('heading', { level: 1, name, exact: true })).toBeVisible();
     await expect(page).toHaveTitle(`${name} | Wheelhouse`);
     await expect(page.getByRole('form', { name: `${name} options` })).toBeVisible();
+    await expect(page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Astronaut intake' })).toHaveAttribute('href', '/astronaut-application');
     await page.getByRole('link', { name: 'All bicycles' }).click();
   }
 });

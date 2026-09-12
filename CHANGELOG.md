@@ -15,6 +15,6 @@
 
 ## 0.1.0
 
-- Added the atomic-era sandbox home page with a visual experiment poster and browser-automation introduction.
+- Added the atomic-era playground home page with a visual experiment poster and browser-automation introduction.
 - Added the Wheelhouse bike shop with a nine-product national-park collection, product details, configuration controls, and basket confirmations.
 - Added email signup validation, responsive layouts, shared styling, and initial unit and Playwright coverage.

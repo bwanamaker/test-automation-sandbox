@@ -20,7 +20,7 @@ test('homepage links to the bike shop and keeps its distinct theme and shared fo
   await expect(page).toHaveURL('/');
 });
 
-test('headers keep the same geometry across sandbox destinations', async ({ page }) => {
+test('headers keep the same geometry across playground destinations', async ({ page }) => {
   for (const viewport of [{ width: 1280, height: 900 }, { width: 375, height: 812 }]) {
     await page.setViewportSize(viewport);
     const headers = [];

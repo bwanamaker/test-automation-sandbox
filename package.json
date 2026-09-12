@@ -1,15 +1,15 @@
 {
-  "name": "test-automation-sandbox",
+  "name": "test-automation-playground",
   "version": "0.3.0",
   "description": "Practice website framework for test automation.",
-  "homepage": "https://github.com/bwanamaker/test-automation-sandbox#readme",
+  "homepage": "https://github.com/bwanamaker/test-automation-playground#readme",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bwanamaker/test-automation-sandbox.git"
+    "url": "git+https://github.com/bwanamaker/test-automation-playground.git"
   },
   "bugs": {
-    "url": "https://github.com/bwanamaker/test-automation-sandbox/issues"
+    "url": "https://github.com/bwanamaker/test-automation-playground/issues"
   },
   "scripts": {
     "start": "node server.js",

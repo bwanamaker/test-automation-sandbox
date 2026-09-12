@@ -10,8 +10,8 @@
 html { scroll-padding-top: 1.5rem; }
 body { margin: 0; background: var(--tan); color: var(--ink); font-family: Futura, "Century Gothic", Arial, sans-serif; line-height: 1.5; }
 a { color: inherit; }
-button, input, select { font: inherit; }
-a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid var(--rust); outline-offset: 5px; }
+button, input, select, textarea { font: inherit; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--rust); outline-offset: 5px; }
 .site-header, main, .footer-inner { width: min(1120px, calc(100% - 3rem)); margin: auto; }
 .site-header { display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; padding: 1.5rem 0; border-bottom: 1px solid rgba(46, 42, 32, .35); }
 .brand { position: relative; font-size: 1.4rem; font-weight: 700; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; }
@@ -178,4 +178,90 @@ dialog::backdrop { background: rgba(46, 42, 32, .65); }
 @media (prefers-reduced-motion: reduce) {
   .product-card { transition: none; }
   .product-card:hover { transform: none; }
+}
+
+/* Starward Bureau uses an optimistic, streamlined space-age visual language. */
+.astronaut-page { --space-navy: #173449; --space-blue: #216674; --space-cream: #fff6df; --space-gold: #f5bb4c; --space-orange: #e8502f; --space-sky: #8fc5c2; background: #d8e3d4; color: var(--space-navy); }
+.astronaut-page .site-header, .astronaut-page main, .astronaut-page .footer-inner { width: min(1060px, calc(100% - 3rem)); }
+.space-header { border-color: #17344966; }
+.space-brand { color: var(--space-navy); font-size: 1.15rem; font-weight: 700; letter-spacing: .12em; line-height: 1; text-decoration: none; text-transform: uppercase; }
+.space-brand span:last-child { display: block; font-size: .5rem; letter-spacing: .18em; margin: .35rem 0 0 2.1rem; }
+.space-brand-mark { color: var(--space-orange); display: inline-block; font-size: 2rem; margin-right: .45rem; vertical-align: middle; }
+.astronaut-page main { min-height: 72vh; padding-top: 3.3rem; }
+.space-masthead { display: grid; grid-template-columns: minmax(0, 1fr) 15rem; align-items: center; gap: 4rem; border-bottom: 2px solid var(--space-navy); padding-bottom: 2.5rem; }
+.space-masthead h1 { font-size: clamp(3.2rem, 7vw, 6.2rem); margin-bottom: 1.25rem; max-width: 12ch; }
+.space-masthead h1 em { color: var(--space-orange); font-style: normal; }
+.space-masthead > div > p:not(.eyebrow) { font-size: 1rem; max-width: 48ch; }
+.rocket-seal { background: var(--space-navy); border: 2px solid var(--space-navy); box-shadow: 7px 7px 0 var(--space-orange); color: var(--space-cream); display: flex; flex-direction: column; min-height: 18rem; padding: 1.2rem; text-align: center; transform: rotate(3deg); }
+.rocket-seal span { font-size: .5rem; letter-spacing: .13em; }
+.rocket-seal strong { font-size: 1.25rem; letter-spacing: -.04em; line-height: 1; margin: .8rem 0 auto; }
+.rocket-seal svg { display: block; margin: auto; width: 100%; }
+.mission-loading { display: grid; justify-items: center; min-height: 35rem; padding: 8rem 1rem 4rem; text-align: center; }
+.mission-loading[hidden] { display: none; }
+.mission-loading > p:last-child { font-size: .85rem; margin: -.2rem 0 0; }
+.solar-spinner { height: 13rem; margin-bottom: 2rem; position: relative; width: 13rem; }
+.solar-spinner .sun { background: var(--space-gold); border: 3px solid var(--space-navy); border-radius: 50%; box-shadow: 0 0 0 7px #f5bb4c55; height: 2.7rem; left: calc(50% - 1.35rem); position: absolute; top: calc(50% - 1.35rem); width: 2.7rem; }
+.orbit { border: 2px solid #17344999; border-radius: 50%; display: block; left: 50%; position: absolute; top: 50%; transform: translate(-50%, -50%) rotate(-24deg); }
+.orbit b { border: 2px solid var(--space-navy); border-radius: 50%; display: block; position: absolute; }
+.orbit-one { animation: orbit-spin 2.2s linear infinite; height: 5rem; width: 5rem; }
+.orbit-one b { background: var(--space-orange); height: .9rem; right: .15rem; top: .5rem; width: .9rem; }
+.orbit-two { animation: orbit-spin 3.5s linear infinite reverse; height: 8.4rem; width: 8.4rem; }
+.orbit-two b { background: var(--space-sky); bottom: .3rem; height: 1rem; left: .7rem; width: 1rem; }
+.orbit-three { animation: orbit-spin 5s linear infinite; height: 12.2rem; width: 12.2rem; }
+.orbit-three b { background: var(--space-cream); height: 1.15rem; right: 1.25rem; top: 1.25rem; width: 1.15rem; }
+@keyframes orbit-spin { to { transform: translate(-50%, -50%) rotate(336deg); } }
+.application-shell { background: var(--space-cream); border: 2px solid var(--space-navy); box-shadow: 10px 10px 0 var(--space-navy); margin: 3rem auto 1rem; max-width: 52rem; padding: clamp(1.25rem, 4vw, 3rem); }
+.application-intro { border-bottom: 1px solid #17344977; margin-bottom: 2rem; padding-bottom: 1.3rem; }
+.application-intro h2 { font-size: clamp(1.9rem, 4vw, 3rem); letter-spacing: -.05em; margin-bottom: .3rem; }
+.application-intro p:last-child { font-size: .76rem; margin: 0; }
+.astronaut-page form { display: grid; gap: 2rem; }
+.astronaut-page form[hidden] { display: none; }
+.astronaut-page fieldset { border: 0; border-top: 1px solid #17344966; margin: 0; min-width: 0; padding: 1.6rem 0 0; }
+.astronaut-page legend { color: var(--space-blue); font-size: .7rem; font-weight: 700; letter-spacing: .13em; padding: 0 1rem 0 0; text-transform: uppercase; }
+.astronaut-page .form-grid { display: grid; gap: 1.2rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.astronaut-page label { color: var(--space-navy); display: block; font-size: .68rem; }
+.astronaut-page label > span[aria-hidden="true"] { color: var(--space-orange); }
+.astronaut-page input, .astronaut-page select, .astronaut-page textarea { background: #fffdf5; border: 1px solid var(--space-navy); border-radius: 0; color: var(--space-navy); display: block; font: inherit; margin-top: .15rem; min-height: 2.8rem; padding: .65rem; width: 100%; }
+.astronaut-page textarea { min-height: 8rem; resize: vertical; }
+.astronaut-page input[aria-invalid="true"], .astronaut-page select[aria-invalid="true"], .astronaut-page textarea[aria-invalid="true"] { border: 2px solid #b72920; }
+.field-error { color: #9e281f; display: block; font-size: .68rem; font-weight: 400; letter-spacing: 0; line-height: 1.35; min-height: 1.1rem; text-transform: none; }
+.choice-group { margin-top: 1.35rem; }
+.choice-group > span:first-child { display: block; font-size: .68rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.choice-group > span:first-child > span[aria-hidden="true"] { color: var(--space-orange); }
+.choice-group > div { display: flex; flex-wrap: wrap; gap: .75rem 1.3rem; margin-top: .5rem; }
+.astronaut-page .choice-group label, .astronaut-page .consent { align-items: center; display: flex; gap: .5rem; letter-spacing: .02em; text-transform: none; }
+.astronaut-page .choice-group input, .astronaut-page .consent input { accent-color: var(--space-orange); flex: 0 0 auto; margin: 0; min-height: auto; padding: 0; width: 1rem; }
+.choice-group .field-error { display: block; margin-top: .35rem; }
+.consent { flex-wrap: wrap; margin-top: 1.3rem; }
+.consent .field-error { flex-basis: 100%; }
+.form-summary { background: #f9d9ca; border-left: 5px solid #b72920; color: #6d1e19; font-size: .8rem; padding: 1rem; }
+.form-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 1.25rem; }
+.application-confirmation { margin: 4rem auto 2rem; max-width: 34rem; text-align: center; }
+.application-confirmation h2 { font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: -.05em; margin-bottom: .75rem; }
+.application-confirmation > p:not(.eyebrow) { margin: 0 auto; max-width: 38ch; }
+.confirmation-actions { display: flex; justify-content: center; margin-top: 2rem; }
+.launch-button { background: var(--space-orange); border-color: var(--space-orange); }
+.launch-button:hover { background: #b93625; border-color: #b93625; }
+.text-button { background: transparent; border: 0; color: var(--space-navy); cursor: pointer; font-size: .72rem; font-weight: 700; letter-spacing: .08em; padding: .75rem .25rem; text-decoration: underline; text-underline-offset: .3rem; text-transform: uppercase; }
+.astronaut-page footer { background: var(--space-navy); margin-top: 5rem; }
+.astronaut-page .footer-inner { grid-template-columns: 1fr auto; }
+.astronaut-preview { border-bottom: 1px solid #174e5260; margin-top: 0; }
+@media (max-width: 720px) {
+  .astronaut-page .site-header, .astronaut-page main, .astronaut-page .footer-inner { width: calc(100% - 2rem); }
+  .space-masthead { gap: 2rem; grid-template-columns: 1fr 9rem; }
+  .rocket-seal { min-height: 13rem; padding: .75rem; }
+  .rocket-seal strong { font-size: .9rem; }
+  .rocket-seal span { font-size: .38rem; }
+  .mission-loading { min-height: 28rem; padding-top: 5rem; }
+  .application-shell { box-shadow: 6px 6px 0 var(--space-navy); }
+}
+@media (max-width: 520px) {
+  .space-masthead { grid-template-columns: 1fr; }
+  .rocket-seal { display: none; }
+  .astronaut-page .form-grid { grid-template-columns: 1fr; }
+  .astronaut-page .footer-inner { grid-template-columns: 1fr; }
+  .choice-group > div { display: grid; gap: .5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .orbit-one, .orbit-two, .orbit-three { animation-duration: 12s; }
 }

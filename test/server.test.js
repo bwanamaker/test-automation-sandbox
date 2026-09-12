@@ -15,6 +15,9 @@ test('serves the landing page, catalog, and every product page', async () => {
     assert.match(home.body, /Launch sandbox/);
     assert.doesNotMatch(home.body, /Wheelhouse/);
     assert.doesNotMatch(home.body, /email-signup/);
+    const application = await get('/astronaut-application');
+    assert.equal(application.status, 200);
+    assert.match(application.body, /Astronaut application/);
     const catalog = await get('/products');
     assert.equal(catalog.status, 200);
     assert.equal((catalog.body.match(/class="product-card"/g) || []).length, 9);

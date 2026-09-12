@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0
+
+- Added a static build that generates GitHub Pages-compatible routes and repository-aware asset URLs.
+- Added automated GitHub Pages deployment on changes to the static site, build pipeline, or deployment workflow.
+- Documented the live GitHub Pages site, local Node.js development, and production build process.
+
 ## 0.2.0
 
 - Added a retro-futurist astronaut intake page with a randomized 5-15 second solar-system loading sequence.
